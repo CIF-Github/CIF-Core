@@ -1,7 +1,8 @@
-Building Dash Core
+Building CIF-Core
 
-After you install the usual build tools and C++ development tools,
-Dash Core also needs some build dependencies which are not always provided
+After you install the usual build tools and C++ development tools
+(detailed information can be found in doc folder),
+CIF-Core also needs some build dependencies which are not always provided
 by default by the OS package manager
 (in particular BerkeleyDB 4.8 for building with wallet support).
 
@@ -20,11 +21,15 @@ use the autogen script to prepare the build environment.
     ./configure
     make
 
+Optionally you can install the binaries by
+
+    sudo make install
+
 Precompiled binaries are available at github, see
-https://github.com/dashpay/dash-binaries
+https://github.com/CIF-Github/CIF-Core/wiki
 
 Always verify the signatures and checksums.
 
-See doc/build-*.md for instructions on building dashd,
+See doc/build-*.md for instructions on building cifd,
 the intended-for-services, no-graphical-interface,
-reference implementation of Dash.
+reference implementation of CIF.
